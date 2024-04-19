@@ -83,7 +83,8 @@ var data = await response.json();
 
         }
         searchBtn.addEventListener("click", ()=>{
-            checkWeather(searchBox.value);
+            const cityName = searchBox.value.trim();
+            checkWeather(cityName);
         })
 </script>
 
